@@ -1,0 +1,27 @@
+/*barra-busqueda*/
+
+.container_barra{
+    position: relative;
+}
+
+.nueva-barra{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+}
+
+.input-group{
+    height: 60px;
+    width: auto;
+}
+
+.form-control{
+    height: auto;
+}
+
+.capa{
+    background-color: rgb(144, 136, 136, 0.286);
+    height: 250px;
+    padding-top: 45px;
+}
+

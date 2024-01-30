@@ -1,0 +1,67 @@
+
+
+
+
+.main-container{
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+
+table{
+    background-color: rgba(235, 233, 233, 0.43);
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td{
+    padding: 20px ;
+}
+
+thead{
+    background-color: rgba(159, 19, 19, 0.874);
+    color: #f1f1f1;
+}
+
+tr:nth-child(even){
+    background-color: #efeaea;
+}
+
+tr:hover td{
+    background-color: rgba(113, 112, 113, 0.597);
+    color: #f5f2f2;
+}
+
+.about_main{
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 2em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  }
+  
+  .about_icons{
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  .about_icon{
+    width: 40px;
+  }
+  
+  .about_title{
+    font-size: 20px;
+    color: #000;
+  }
+
+  
+
+
+/*tabla de prueba*/
+
