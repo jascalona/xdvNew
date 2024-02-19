@@ -148,7 +148,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   code,
   kbd,
   samp {
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 1em;
   }
   
@@ -210,7 +209,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   optgroup,
   textarea {
     margin: 0;
-    font-family: inherit;
     font-size: inherit;
     line-height: inherit;
   }
@@ -5531,7 +5529,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     z-index: 1070;
     display: block;
     margin: 0;
-    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -5643,7 +5640,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     z-index: 1060;
     display: block;
     max-width: 276px;
-    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -9102,10 +9098,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     pointer-events: auto;
     content: "";
     background-color: rgba(0, 0, 0, 0);
-  }
-  
-  .text-monospace {
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
   }
   
   .text-justify {
