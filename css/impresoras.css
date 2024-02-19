@@ -38,7 +38,6 @@
   
   body {
     margin: 0;
-    font-family: "Roboto", sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -159,7 +158,6 @@
   code,
   kbd,
   samp {
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 1em;
   }
   
@@ -221,7 +219,6 @@
   optgroup,
   textarea {
     margin: 0;
-    font-family: inherit;
     font-size: inherit;
     line-height: inherit;
   }
@@ -5542,7 +5539,6 @@
     z-index: 1070;
     display: block;
     margin: 0;
-    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -5654,7 +5650,6 @@
     z-index: 1060;
     display: block;
     max-width: 276px;
-    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
