@@ -34,7 +34,7 @@
 
 
     // Date and time picker
-    $('#date').datetimepicker({
+    $('#date').datetimepicker({ 
         format: 'L'
     });
     $('#time').datetimepicker({
