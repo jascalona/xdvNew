@@ -35,7 +35,7 @@
 }
 
 .prue{
-    background-image: url(/img/prue.jpg);
+    background-image: url(http://localhost/xdv-main/S/img/prue.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% 50%;
@@ -44,7 +44,7 @@
 
 /*-sesion img public*/
 .global-services{
-    background-image: url(/img/franja\ red.webp);
+    background-image: url(http://localhost/xdv-main//img/franja\ red.webp);
     background-size: cover;
     background-position: 100% 100%;
     background-repeat: no-repeat;
