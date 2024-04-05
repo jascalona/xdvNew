@@ -32,7 +32,7 @@
                         <li><a href="../report.html"><i style="margin-top: 5px;" class='bx bxs-report' ></i>Report</a></li>
                         <li><a href="../devices.html"><i style="margin-top: 5px;" class='bx bxs-printer'></i>Devices</a></li>
                         <li><a href="../counter.html"><i style="margin-top: 5px;" class='bx bx-slider-alt'></i>Counter</a></li>
-                        <li><a href="../ListPart/listparts.php"><i style="margin-top: 5px;" class='bx bxs-cog'></i>ListParts</a></li>
+                        <a href="listpart/listparts.php" class="nav-item nav-link">ListPart</a>
                     </div>
                 </ul>
             </nav>

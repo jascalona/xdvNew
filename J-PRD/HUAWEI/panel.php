@@ -26,7 +26,7 @@
             <div class="header-content">
 
                 <div class="logo">
-                    <a style="color: #000; text-decoration: none;" href="http://localhost/xdv-main//index.html"><h1>Grupo<b>XDV</b></h1></a>
+                    <a href="http://localhost/xdv-main//index.html"><h1>Grupo<b>XDV</b></h1></a>
                 </div>
 
                 <div class="menu" id="show-menu">
@@ -45,9 +45,9 @@
                         <a href="http://localhost/xdv-main//J-PRD/dashboard.html" class="nav-item nav-link ">J-PRD</a>
                         <a href="http://localhost/xdv-main//J-PRD/clientes.html" class="nav-item nav-link ">Clientes</a>
                         <a href="http://localhost/xdv-main//Soluciones&Servicios.html" class="nav-item nav-link">Reportes</a>
-                        <a href="http://localhost/xdv-main//Soluciones&Servicios.html" class="nav-item nav-link">DP</a>
+                        <a href="DEVICES/devices.php" class="nav-item nav-link">DP</a>
                         <a href="http://localhost/xdv-main//Soluciones&Servicios.html" class="nav-item nav-link">Contadores</a>
-                        <a href="http://localhost/xdv-main//Soluciones&Servicios.html" class="nav-item nav-link">ListPart</a>
+                        <a href="../ListPart/listparts.php" class="nav-item nav-link">ListPart</a>
 
                     </div>
                 </div>
