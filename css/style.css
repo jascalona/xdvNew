@@ -583,7 +583,7 @@ article img{
 /*-sesion img public*/
 
 .global-services{
-    background-image: url(/img/franja\ red.webp);
+    background-image: url(http://localhost/xdv-main//img/franja\ red.webp);
     background-size: cover;
     background-position: 100% 100%;
     background-repeat: no-repeat;

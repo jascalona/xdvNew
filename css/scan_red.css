@@ -8,7 +8,7 @@ body{
     height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url(/img/xeroxb.jpg);
+    background-image: url(http://localhost/xdv-main//img/xeroxb.jpg);
     justify-content: center;
     background-size: cover;
     color: #ffffff;
