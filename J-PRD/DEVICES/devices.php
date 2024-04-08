@@ -15,12 +15,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
 
-    <title>ListPart</title>
+    <title>DP</title>
 </head>
 <body>
     
-        <!--Header menu start-->
-        <header>
+         <!--Header menu start-->
+         <header>
             <div class="header-content">
 
                 <div class="logo">
@@ -42,10 +42,11 @@
                     <div class="navbar-nav mr-auto py-0">
                         <a href="http://localhost/xdv-main//J-PRD/dashboard.html" class="nav-item nav-link ">J-PRD</a>
                         <a href="http://localhost/xdv-main//J-PRD/clientes.html" class="nav-item nav-link ">Clientes</a>
+                        <a href="../report.html" class="nav-item nav-link">IDS</a>
                         <a href="../report.html" class="nav-item nav-link">Reportes</a>
                         <a href="../DEVICES/devices.php" class="nav-item nav-link">DP</a>
-                        <a href="http://localhost/xdv-main//Soluciones&Servicios.html" class="nav-item nav-link">Contadores</a>
-                        <a href="../ListPart/listparts.php" class="nav-item nav-link">ListPart</a>
+                        <a href="../counter.php" class="nav-item nav-link">Contadores</a>
+                        <a href="../listpart/listparts.php" class="nav-item nav-link">ListPart</a>
 
                     </div>
                 </div>
