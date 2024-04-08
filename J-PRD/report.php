@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -20,13 +24,15 @@
 </head>
 <body>
     
-         <!--Header menu start-->
-         <header>
+          <!--Header menu start-->
+          <header>
             <div class="header-content">
 
                 <div class="logo">
                     <a href="http://localhost/xdv-main//index.html"><h1>Grupo<b>XDV</b></h1></a>
                 </div>
+
+                
 
                 <div class="menu" id="show-menu">
 
@@ -41,17 +47,23 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav mr-auto py-0">
-                        <a href="http://localhost/xdv-main//J-PRD/dashboard.html" class="nav-item nav-link ">J-PRD</a>
-                        <a href="http://localhost/xdv-main//J-PRD/clientes.html" class="nav-item nav-link ">Clientes</a>
+                        <a href="dashboard.php" class="nav-item nav-link ">Dashboard</a>
+                        <a href="clientes.php" class="nav-item nav-link ">Clientes</a>
                         <a href="report.html" class="nav-item nav-link">IDS</a>
                         <a href="report.html" class="nav-item nav-link">Reportes</a>
-                        <a href="DEVICES/devices.php" class="nav-item nav-link">DP</a>
+                        <a href="devices/devices.php" class="nav-item nav-link">DP</a>
                         <a href="counter.php" class="nav-item nav-link">Contadores</a>
                         <a href="listpart/listparts.php" class="nav-item nav-link">ListPart</a>
-
                     </div>
                 </div>
             </nav>
+
+            <div style="font-size: 25px; font-weight: 600; position: relative; padding-top: 20px; margin-right: -100px;" class="name-user">
+                <?php
+                    echo $_SESSION['user'];
+                ?>
+            </div>
+
         </div>
         </header>
         <!--Header menu end-->
