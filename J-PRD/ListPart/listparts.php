@@ -112,7 +112,7 @@
                     JS-->
                     
                     <br>
-                    <table style="margin-left: 0; margin-top: 70px;" class="table table-bordered table_id ">
+                    <table style="margin-left: 100px; width: 90%;  margin-top: 70px;" class="table table-bordered table_id ">
 
                         
                         <thead>    
