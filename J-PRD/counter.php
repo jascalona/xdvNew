@@ -58,11 +58,14 @@ session_start();
                 </div>
             </nav>
 
+
             <div style="font-size: 25px; font-weight: 600; position: relative; padding-top: 20px; margin-right: -100px;" class="name-user">
                 <?php
                     echo $_SESSION['user'];
                 ?>
             </div>
+
+            
 
         </div>
         </header>
