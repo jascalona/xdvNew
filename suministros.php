@@ -122,7 +122,7 @@
                             <div class="p-4">
                                 <div class="d-flex justify-content-between mb-2">
                                 </div>
-                                <a class="h5 text-primary text-decoration-none" href="#" style="display: flex; justify-content: center;">Tóner</a>
+                                <p class="h5 text-primary text-decoration-none" style="display: flex; justify-content: center;">Tóner</p>
                                 <div class="border-top mt-3 pt-4">
                                     <div class="d-flex justify-content-between">
                                     </div>
@@ -137,7 +137,7 @@
                             <div class="p-4">
                                 <div class="d-flex justify-content-between mb-2">
                                 </div>
-                                <a class="h5 text-primary text-decoration-none" href="#" style="display: flex; justify-content: center;">Kit de mantenimiento</a>
+                                <p class="h5 text-primary text-decoration-none" style="display: flex; justify-content: center;">Kit de mantenimiento</p>
                                 <div class="border-top mt-3 pt-4">
                                     <div class="d-flex justify-content-between">
                                     </div>
@@ -152,7 +152,7 @@
                             <div class="p-4">
                                 <div class="d-flex justify-content-between mb-2">
                                 </div>
-                                <a class="h5 text-primary text-decoration-none" href="#" style="display: flex; justify-content: center;">Elige tu papel sabiamente</a>
+                                <p class="h5 text-primary text-decoration-none" style="display: flex; justify-content: center;">Elige tu papel sabiamente</p>
                                 <div class="border-top mt-3 pt-4">
                                     <div class="d-flex justify-content-between">
                                     </div>
