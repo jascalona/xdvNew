@@ -1,22 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="jescalona">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>    
-    <link rel="stylesheet" href="devices.css">
-    <link rel="icon" href="http://localhost/proyecto-j/IMG/logo.png">
-    <title>Devices</title>
+    <link rel="icon" href="http://localhost/xdv-main/img/xven.jpeg">
+    <link rel="stylesheet" href="http://localhost/xdv-main/css/style.css">
+    <link rel="stylesheet" href="http://localhost/xdv-main/css/suministros.css">
+    <link rel="stylesheet" href="http://localhost/xdv-main/css/xdv.css">
+    <link rel="stylesheet" href="http://localhost/xdv-main//css/barra_busqueda.css">
+    <link rel="stylesheet" href="http://localhost/xdv-main//css/J-PRD.css">
+
+
+    <!--Librerias & Freemwares icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+
+    <title>ListPart</title>
 </head>
 <body>
     
-                
-                    <div class="container-tables">
+        <!--Header menu start-->
+        <header>
+            <div class="header-content">
+
+                <div class="logo">
+                    <a href="http://localhost/xdv-main//index.html"><h1>Grupo<b>XDV</b></h1></a>
+                </div>
+
+                <div class="menu" id="show-menu">
+
+                </div>
+
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark py- py-lg-0 px-xl-5">
+                <a href="" class="text-decoration-none d-block d-lg-none">
+            
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav mr-auto py-0">
+                        <a href="http://localhost/xdv-main//J-PRD/dashboard.html" class="nav-item nav-link ">J-PRD</a>
+                        <a href="http://localhost/xdv-main//J-PRD/clientes.html" class="nav-item nav-link ">Clientes</a>
+                        <a href="../report.html" class="nav-item nav-link">Reportes</a>
+                        <a href="../DEVICES/devices.php" class="nav-item nav-link">DP</a>
+                        <a href="http://localhost/xdv-main//Soluciones&Servicios.html" class="nav-item nav-link">Contadores</a>
+                        <a href="../ListPart/listparts.php" class="nav-item nav-link">ListPart</a>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+        </header>
+        <!--Header menu end-->
+
+
+
+                <div class="blog-container-cover">
+                    <div class="container-info-cover">
+                        <img src="http://localhost/xdv-main//img//imgheader/XEROX LOGO.png" alt="#" style="width: 550px; display: flex; justify-content: center; flex-wrap: wrap; ">
+                    </div>
+                </div>
+
+
+                    <div style="margin-top: 10%;" class="container-tables">
 
                     <!--FILTRO-->
                     
@@ -61,11 +108,11 @@
 
                     <!--satrt search JS-->
                     </form>
-                    <div class="container-fluid">
-                    <form class="d-flex">
-                        <input class="form-control me-2 light-table-filter" data-table="table_id" type="text" 
-                        placeholder="Buscar">
-                        <hr>
+                    <div style="margin-left: 10;" class=" text-md-left" style="display: flex; justify-content: center;">
+                        <form class="d-flex">
+                            <input style="padding-top: 12px; padding-bottom: 12px; padding-right: 600px;" class="form-control me-2 light-table-filter" data-table="table_id" type="text" placeholder="Buscar">
+                            <button style="margin-top: 0px; background-color: brown; cursor: pointer; border: none; border-radius: 5px; padding-left: 20px; padding-right: 20px ; margin-left: 25px;" type="submit" name="limpiar">Resect</button> 
+                            <hr>
                         </form>
                     </div>
                     
@@ -160,7 +207,8 @@
                                 </select>
                             </div>
                         </div>
-    
+
+                        <br>
 
                         <div class="btn-filter">
                         <div class="btn-group" role="group">
@@ -177,7 +225,7 @@
                                    
                     
                     <br>
-                    <table style="margin-left: 130px; margin-top: 70px;" class="table table-bordered table_id ">
+                    <table style=" width: 150%; margin-left: -120px; margin-top: 70px;" class="table table-bordered table_id ">
 
                         
                         <thead>    
@@ -239,5 +287,6 @@
                         
                     <script src="../ListPart/controlador/script.js" ></script>    
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
 </body>
 </html>
