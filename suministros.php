@@ -167,19 +167,30 @@
         <!-- Sesion Blog End -->
 
      <!--barra de busqueda start-->
-     <div class=" text-md-left" style="display: flex; justify-content: center;">
-                <form action="" method="GET">
-                    <div style="margin-top: 85px;" class="input-group">
-                        <input type="search" style="width: 700px;" class="form-control" placeholder="Buscar Producto..." name="busqueda" >
-                        <div class="input-group-append">
-                            <span class="input-group-text bg-trnasparent text-primary">
-                                <button style="border: none;" type="submit" name="enviar" ><a href=""><i style="color: red;" class="fa fa-search"></i></a></button>
-                            </span>
-                            <button style="margin-top: 0px; background-color: brown; cursor: pointer; border: none; border-radius: 5px; padding-left: 20px; padding-right: 20px ; margin-left: 25px;" type="submit" name="limpiar">Limpiar Filtro</button> 
+
+        <!--SEARCH -PHP
+        <div class=" text-md-left" style="display: flex; justify-content: center;">
+                    <form action="" method="GET">
+                        <div style="margin-top: 85px;" class="input-group">
+                            <input type="search" style="width: 700px;" class="form-control" placeholder="Buscar Producto..." name="busqueda" >
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-trnasparent text-primary">
+                                    <button style="border: none;" type="submit" name="enviar" ><a href=""><i style="color: red;" class="fa fa-search"></i></a></button>
+                                </span>
+                                <button style="margin-top: 0px; background-color: brown; cursor: pointer; border: none; border-radius: 5px; padding-left: 20px; padding-right: 20px ; margin-left: 25px;" type="submit" name="limpiar">Limpiar Filtro</button> 
+                            </div>
                         </div>
+                    </form>
+                </div>
+        -->
+
+                    <div class=" text-md-left" style="display: flex; justify-content: center;">
+                        <form class="d-flex">
+                            <input style="padding-top: 12px; padding-bottom: 12px; padding-right: 600px;" class="form-control me-2 light-table-filter" data-table="table_id" type="text" placeholder="Buscar">
+                            <button style="margin-top: 0px; background-color: brown; cursor: pointer; border: none; border-radius: 5px; padding-left: 20px; padding-right: 20px ; margin-left: 25px;" type="submit" name="limpiar">Resect</button> 
+                            <hr>
+                        </form>
                     </div>
-                </form>
-            </div>
         <!--barra de busqueda end-->
 
                     <?php
@@ -196,7 +207,7 @@
                     if (isset($_GET['busqueda']))
                     {
                     $where="WHERE PartN LIKE'%".$busqueda."%' OR Model  LIKE'%".$busqueda."%'
-                    OR SeG  LIKE'%".$busqueda."%'  OR Region  LIKE'%".$busqueda."%' OR PerF LIKE'%".$busqueda."%' ";
+                    OR SeG  LIKE'%".$busqueda."%' OR Region  LIKE'%".$busqueda."%' OR PerF LIKE'%".$busqueda."%' ";
                     }
 
                     }
@@ -283,7 +294,7 @@
  
 
 <!-- Sesion de  JavaScript -->
-<script src="../ListPart/controlador/script.js" ></script>    
+<script src="js/search.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>

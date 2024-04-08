@@ -15,7 +15,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
 
-    <title>Clientes</title>
+    <title>ListPart</title>
 </head>
 <body>
     
@@ -176,6 +176,7 @@
 
             <script src="../ListPart/controlador/script.js" ></script>    
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
 
 </body>
 </html>
