@@ -15,7 +15,7 @@
             </div>
             <div class="login-content">
                 <form method="POST" action="">
-                    <img src="/img/user.svg">
+                    <img src="./img/user.svg" alt="">
                     <h2 class="title">PORTAL PARA SOCIOS</h2>
 
                     <?php
