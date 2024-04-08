@@ -63,17 +63,21 @@
         </div>
 
 
-            <!--FILTER-PHP-->
-                <div class="container is-fluid" style="margin-left: 215px;" >
-                    <div class="container-fluid">
-                        <h4 style="font-size: 50px; padding-top: 30px;">ListPart</h4>
-                    <form class="d-flex" style="margin-top: -20px;">
-                        <form action="" method="GET">
-                                <input style="margin-top: 50px; border: solid rgb(128, 125, 125, 0.324); margin-left: 150px; color: grey;" class="form-control me-2" type="search" placeholder="Buscar Producto" name="busqueda">
-                                <button style="margin-top: 50px; padding: 16px; margin-right: 290px; background-color: brown; cursor: pointer; border: none; " type="submit" name="enviar">Buscar</button> 
-                                <button style="margin-top: 50px; background-color: brown; cursor: pointer; border: none; margin-left: -250px; " type="submit" name="limpiar">Limpiar Filtro</button> 
-                            </form>
+        <!--barra de busqueda start-->
+        <div class=" text-md-left" style="display: flex; justify-content: center;">
+                <form action="" method="GET">
+                    <div style="margin-top: 85px;" class="input-group">
+                        <input type="search" style="width: 700px;" class="form-control" placeholder="Buscar Producto..." name="busqueda" >
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-trnasparent text-primary">
+                                <button style="border: none;" type="submit" name="enviar" ><a href=""><i style="color: red;" class="fa fa-search"></i></a></button>
+                            </span>
+                            <button style="margin-top: 0px; background-color: brown; cursor: pointer; border: none; border-radius: 5px; padding-left: 20px; padding-right: 20px ; margin-left: 25px;" type="submit" name="limpiar">Limpiar Filtro</button> 
+                        </div>
                     </div>
+                </form>
+            </div>
+        <!--barra de busqueda end-->
 
                     <?php
                     $conexion=mysqli_connect("localhost","root","","pj"); 
@@ -108,7 +112,7 @@
                     JS-->
                     
                     <br>
-                    <table style="margin-left: 130px; margin-top: 70px;" class="table table-bordered table_id ">
+                    <table style="margin-left: 0; margin-top: 70px;" class="table table-bordered table_id ">
 
                         
                         <thead>    
