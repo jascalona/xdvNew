@@ -166,117 +166,125 @@
         </div>
         <!-- Sesion Blog End -->
 
-    
-
-
-        <!--barra de busqueda start-->
-            <div class=" text-md-left" style="display: flex; justify-content: center;">
+     <!--barra de busqueda start-->
+     <div class=" text-md-left" style="display: flex; justify-content: center;">
                 <form action="" method="GET">
-                    <div class="input-group">
-                        <input type="search" style="width: 700px;" class="form-control" placeholder="Buscar Producto..." name="busqueda" required>
+                    <div style="margin-top: 85px;" class="input-group">
+                        <input type="search" style="width: 700px;" class="form-control" placeholder="Buscar Producto..." name="busqueda" >
                         <div class="input-group-append">
                             <span class="input-group-text bg-trnasparent text-primary">
-                                <button style="border: none;" type="submit" name="enviar" ><a href="#"><i style="color: red;" class="fa fa-search"></i></a></button>
+                                <button style="border: none;" type="submit" name="enviar" ><a href=""><i style="color: red;" class="fa fa-search"></i></a></button>
                             </span>
+                            <button style="margin-top: 0px; background-color: brown; cursor: pointer; border: none; border-radius: 5px; padding-left: 20px; padding-right: 20px ; margin-left: 25px;" type="submit" name="limpiar">Limpiar Filtro</button> 
                         </div>
                     </div>
                 </form>
             </div>
         <!--barra de busqueda end-->
-        
-<br>        
-<br>
-            
 
+                    <?php
+                    $conexion=mysqli_connect("localhost","root","","pj"); 
+                    $where="";
 
+                    if(isset($_GET['enviar'])){
+                    $busqueda = $_GET['busqueda'];
 
-        <div class="col-lg-8 col-md-6 mb-4  boxc">
-            
-            <a  href="http://localhost/xdv-main//Equipos/vVersalink/Equipos_Versalink.html" class="color"><div class="box"><h3>VersaLink</h3></div></a>
-            <a  href="http://localhost/xdv-main//Equipos/Altalink/Equipos_Altalink.html" class="color"><div class="box"><h3>AltaLink</h3></div></a>
-            <a  href="http://localhost/xdv-main//Equipos/WC/Equipos_WorkCentre.html" class="color"><div class="box"><h3>WorkCentre</h3></div></a>
-            <a  href="#" class="color"><div class="box"><h3>PrimeLink</h3></div></a>
-            <a  href="#" class="color"><div class="box"><h3>Versant</h3></div></a>
-        </div>
+                    if(isset($_GET['limpiar'])){
+                        $limpiar = $_GET['busqueda'];
+                    }
 
-<br>
-<br>
-<br>
+                    if (isset($_GET['busqueda']))
+                    {
+                    $where="WHERE PartN LIKE'%".$busqueda."%' OR Model  LIKE'%".$busqueda."%'
+                    OR SeG  LIKE'%".$busqueda."%'  OR Region  LIKE'%".$busqueda."%' OR PerF LIKE'%".$busqueda."%' ";
+                    }
 
- <!-- Footer Start -->
- <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
-    <div class="row pt-5">
-        <div class="col-lg-3 col-md-6 mb-5">
-            <a href="" class="navbar-brand">
-                <h1 class="text-primary"><span class="text-white">GRUPO</span>XDV</h1>
-            </a>
-            <p>Breve descripcion de la Corporación XDV "el search de abajo estara dedicado para filatrar las versiones de actualización", José Recuerda agg los objeFiltros en la barra{, Lorem ipsum dolor sit amet consectetur adioris?</p>
-            <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">SIGUENOS</h6>
-            <div class="d-flex justify-content-start">
-                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-outline-primary btn-square mr-2" href="https://www.facebook.com/xdv.vzla?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-outline-primary btn-square" href="https://instagram.com/grupoxven?igshid=MzRlODBiNWFlZA=="><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Acceso Directo</h5>
-            <div class="d-flex flex-column justify-content-start">
-                <a class="text-white-50 mb-2" href="http://localhost/xdv-main//index.html"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
-                <a class="text-white-50 mb-2" href="http://localhost/xdv-main//intranect.html"><i class="fa fa-angle-right mr-2"></i>J-PRD</a>
-                <a class="text-white-50 mb-2" href="http://localhost/xdv-main//Soluciones&Servicios.html"><i class="fa fa-angle-right mr-2"></i>Soluciones & Servicios</a>
-                <a class="text-white-50 mb-2" href="http://localhost/xdv-main//contacto.html"><i class="fa fa-angle-right mr-2"></i>Contactos</a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Equipos</h5>
-            <div class="d-flex flex-column justify-content-start">
-                <a class="text-white-50 mb-2" href="http://localhost/xdv-main//Equipos/vVersalink/Equipos_Versalink.html"><i class="fa fa-angle-right mr-2"></i>Versalink</a>
-                <a class="text-white-50 mb-2" href="http://localhost/xdv-main//Equipos/Altalink/Equipos_Altalink.html"><i class="fa fa-angle-right mr-2"></i>AltaLink</a>
-                <a class="text-white-50 mb-2" href="http://localhost/xdv-main//Equipos/WC/Equipos_WorkCentre.html"><i class="fa fa-angle-right mr-2"></i>WorkCentre</a>
-                <a class="text-white-50 mb-2" href="http://localhost/xdv-main//Equipos/versant/versant.html"><i class="fa fa-angle-right mr-2"></i>Versant</a>
-                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>PrimeLink</a>
+                    }
+                    ?>
+                    <br>
 
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">contacto</h5>
-            <p><i class="fa fa-map-marker-alt mr-2"></i>Av. Ávila, Caracas 1060, Miranda, Venezuela</p>
-            <p><i class="fa fa-phone-alt mr-2"></i>+58 05009376934</p>
-            <p><i class="fa fa-envelope mr-2"></i>soportexdv@egrupoxven.com
-
-            </p>
-            <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Más Información</h6>
-            <div class="w-100">
-                <div class="input-group">
-                    <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Email">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary px-3">Soluicitar Información</button>
+                <!--FILTER 
+                    </form>
+                    <div class="container-fluid">
+                    <form class="d-flex">
+                        <input class="form-control me-2 light-table-filter" data-table="table_id" type="text" 
+                        placeholder="Buscar">
+                        <hr>
+                        </form>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
-    <div class="row">
-        <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-            <p class="m-0 text-white-50">Copyright &copy; <a href="#" style="color: red;">José Escalona</a>. Todos los Derechos Reservados.</a>
-            </p>
-        </div>
-        <div class="col-lg-6 text-center text-md-right">
-            <p class="m-0 text-white-50">Designed by <a href="https://joseEscalona.com" style="color: red;">JE</a>
-            </p>
-        </div>
-    </div>
-</div>
-<!-- Footer End -->
+                    JS-->
+                    
+                    <br>
+                    <table style="margin-left: 100px; width: 90%;  margin-top: 70px;" class="table table-bordered table_id ">
+
+                        
+                        <thead>    
+                            <tr>
+                                <th>PartN</th>
+                                <th>EAS</th>
+                                <th>Model</th>
+                                <th>SeG</th>
+                                <th>Mo/Co</th>
+                                <th>Description</th>
+                                <th>PerF</th>
+                                <th>Region</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                    <?php
+
+                    $conexion=mysqli_connect("localhost","root","","pj");               
+                    $SQL="SELECT listpart.PartN, listpart.EAS, listpart.Model, listpart.SeG, listpart.Mo_Co,
+                    listpart.DesC, listpart.PerF, listpart.Region FROM listpart
+                    $where";
+                    $dato = mysqli_query($conexion, $SQL);
+
+                    if($dato -> num_rows >1){
+                    while($fila=mysqli_fetch_array($dato)){
+                    
+                    ?>
+                        <tr>
+                        <td><?php echo $fila['PartN']; ?></td>
+                        <td><?php echo $fila['EAS']; ?></td>
+                        <td><?php echo $fila['Model']; ?></td>
+                        <td><?php echo $fila['SeG']; ?></td>
+                        <td><?php echo $fila['Mo_Co']; ?></td>
+                        <td><?php echo $fila['DesC']; ?></td>
+                        <td><?php echo $fila['PerF']; ?></td>
+                        <td><?php echo $fila['Region']; ?></td>
+
+                        </tr>
 
 
+                    <?php
+                    }
+                    }else{
+
+                    ?>
+                    <tr class="text-center">
+                    <td colspan="16">No existen registros</td>
+                    </tr>
+
+                    <?php
+    
+                    }
+
+                    ?>
+                            
 
 
+   
+
+          
+            
+
+ 
 
 <!-- Sesion de  JavaScript -->
+<script src="../ListPart/controlador/script.js" ></script>    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 <script src="lib/easing/easing.min.js"></script>
