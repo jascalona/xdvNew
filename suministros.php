@@ -193,6 +193,7 @@
                     </div>
         <!--barra de busqueda end-->
 
+        
                     <?php
                     $conexion=mysqli_connect("localhost","root","","pj"); 
                     $where="";
