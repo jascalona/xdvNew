@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -27,6 +32,8 @@
                     <a href="http://localhost/xdv-main//index.html"><h1>Grupo<b>XDV</b></h1></a>
                 </div>
 
+                
+
                 <div class="menu" id="show-menu">
 
                 </div>
@@ -48,9 +55,18 @@
                         <a href="counter.php" class="nav-item nav-link">Contadores</a>
                         <a href="listpart/listparts.php" class="nav-item nav-link">ListPart</a>
 
+                    
+
                     </div>
                 </div>
             </nav>
+
+            <div style="font-size: 25px; font-weight: 600; position: relative; padding-top: 20px; margin-right: -100px;" class="name-user">
+                <?php
+                    echo $_SESSION['user'];
+                ?>
+            </div>
+
         </div>
         </header>
         <!--Header menu end-->
