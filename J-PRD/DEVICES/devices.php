@@ -245,28 +245,21 @@
 
                     <?php
 
-                    $conexion=mysqli_connect("localhost","root","","pj");               
+                    $conexion=mysqli_connect("localhost","root","","pj", "3306");               
                     $SQL="SELECT devices.rif, devices.serial, devices.model, devices.customer, devices.dp, devices.location, devices.region,
                     devices.total FROM devices
                     $where";
+
                     $dato = mysqli_query($conexion, $SQL);
 
                     include "search.php";
+
                     
                     if($dato -> num_rows >1){
                     while($fila=mysqli_fetch_array($dato)){
                     
                     ?>
-                        <tr>
-                            <td><?php echo $fila['rif']; ?></td>
-                            <td><?php echo $fila['serial']; ?></td>
-                            <td><?php echo $fila['model']; ?></td>
-                            <td><?php echo $fila['customer']; ?></td>
-                            <td><?php echo $fila['dp']; ?></td>
-                            <td><?php echo $fila['location']; ?></td>
-                            <td><?php echo $fila['region']; ?></td>
-                            <td><?php echo $fila['total']; ?></td>
-                        </tr>
+                        
                         
 
                     <?php
@@ -286,7 +279,7 @@
 
                         
                     <script src="../ListPart/controlador/script.js" ></script>    
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 </body>
 </html>
