@@ -58,11 +58,16 @@ session_start();
                 </div>
             </nav>
 
-            <div style="font-size: 25px; font-weight: 600; position: relative; padding-top: 20px; margin-right: -100px;" class="name-user">
+            <div style="font-size: 25px; font-weight: 600; margin-top: 10px; margin-bottom: 15px; position: relative; padding-top: 20px; margin-right: -100px; background: brown; padding: 10px; border-radius: 8px;" class="name-user">
                 <?php
                     echo $_SESSION['user'];
                 ?>
             </div>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <a href="../Conn/controlador/cerrar.php" style="margin-right: -130px; height: 50px; margin-top: 15px; margin-left: 30px;" class="btn btn-primary me-md-2">Cerrar Sesion</a>
+            </div>
+
 
         </div>
         </header>

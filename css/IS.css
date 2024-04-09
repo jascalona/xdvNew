@@ -24,6 +24,7 @@ body{
 .login-content img {
     width: 100px;
     margin-top: -185%;
+    color: rgba(168, 18, 18, 0.829);
 }
 
 .login-content h2{
