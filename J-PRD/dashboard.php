@@ -14,7 +14,7 @@ session_start();
     <link rel="stylesheet" href="http://localhost/xdv-main/css/xdv.css">
     <link rel="stylesheet" href="http://localhost/xdv-main/css/tablas.css">
     <link rel="stylesheet" href="http://localhost/xdv-main//css/barra_busqueda.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!--Librerias & Freemwares icons-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -31,8 +31,6 @@ session_start();
                 <div class="logo">
                     <a href="http://localhost/xdv-main//index.html"><h1>Grupo<b>XDV</b></h1></a>
                 </div>
-
-                
 
                 <div class="menu" id="show-menu">
 
@@ -58,16 +56,17 @@ session_start();
                 </div>
             </nav>
 
-            <div style="font-size: 25px; font-weight: 600; margin-top: 10px; margin-bottom: 15px; position: relative; padding-top: 20px; margin-right: -100px; background: brown; padding: 10px; border-radius: 8px;" class="name-user">
-                <?php
+                <div style="margin-top: 15px; margin-bottom: 15px; margin-right: -120px;" class="btn-group" role="group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <?php
                     echo $_SESSION['user'];
-                ?>
-            </div>
-
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <a href="../Conn/controlador/cerrar.php" style="margin-right: -130px; height: 50px; margin-top: 15px; margin-left: 30px;" class="btn btn-primary me-md-2">Cerrar Sesion</a>
-            </div>
-
+                    ?>                    
+                    </button>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../Conn/controlador/cerrar.php">Cerrar Sesion</a></li>
+                    </ul>
+                </div>
+                </div>
 
         </div>
         </header>
