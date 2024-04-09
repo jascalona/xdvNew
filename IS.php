@@ -46,6 +46,7 @@
 
                     <div class="text-center">
                     <a class="font-italic isai5" href="">Olvidé mi contraseña</a>
+                    <br>
                     <a class="font-italic isai5" href="">Registrarse</a>
                     </div>
                     <button name="btningresar" class="btn" type="submit" value="INICIAR SESION">INICIAR</button>
