@@ -22,7 +22,7 @@ if (!empty($_POST['btningresar'])) {
 
             header("location: J-PRD/dashboard.php");
         } else {
-            echo "<div class='alert alert-danger'>Acceso denegado<div>";
+            echo '<div style="background: rgb(190, 34, 34, 0.542); position: absolute; padding: 10px; margin-top: -30px; margin-left: -25px;" class="alert alert-danger">ACCESO DENEGADO. "COMUNIQUESE CON EL ADMINISTRADOR DE SISTEMA"</div>';
         }
         
 

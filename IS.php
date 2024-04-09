@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal de Socios</title>
-    <link rel="stylesheet" href="http://localhost/xdv-main///css/IS.css">
+    <link rel="stylesheet" href="./css/IS.css">
     <link rel="icon" href="img/xven.jpeg">
 </head>
 <body>
@@ -15,9 +15,11 @@
             </div>
             <div class="login-content">
                 <form method="POST" action="">
-                    <img src="./img/user.svg" alt="">
-                    <h2 class="title">PORTAL PARA SOCIOS</h2>
-
+                    <img style="width: 250px; margin-left: 150px;" src="./img/imgheader/XEROX LOGO.png" alt="">
+                    <br>
+                    <h2 class="title">Socios-Iniciar sesión con su Usuario de red</h2>
+                       <br>
+                       <br>
                     <?php
                     include "./Conn/controlador/validar.php";
                     ?>
@@ -28,7 +30,7 @@
                     </div>
                     <div class="div">
                         <h5>Usuario</h5>
-                        <input id="user" type="text" class="input" name="user">
+                        <input id="user" type="text" class="input" name="user" placeholder="Ingrese su Usuario" required>
                     </div>
                     </div>
                     <div class="input-div pass">
@@ -37,19 +39,20 @@
                     </div>
                     <div class="div">
                         <h5>Contraseña</h5>
-                        <input type="password" id="input" class="input" name="password">
+                        <input type="password" id="input" class="input" name="password" placeholder="Ingrese su Contraseña" required>
                     </div>
                     </div>
                     <div class="view">
                     <div class="fas fa-eye verPassword" onclick="vista()" id="verPassword"></div>
                     </div>
+                    
+                    <button name="btningresar" class="btn" type="submit" value="INICIAR SESION">INICIAR</button>
 
-                    <div class="text-center">
+                    <div style="margin-left: 100px;" class="text-center">
                     <a class="font-italic isai5" href="">Olvidé mi contraseña</a>
                     <br>
                     <a class="font-italic isai5" href="">Registrarse</a>
                     </div>
-                    <button name="btningresar" class="btn" type="submit" value="INICIAR SESION">INICIAR</button>
                 </form>
             </div>
         </div>
